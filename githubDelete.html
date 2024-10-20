@@ -21,12 +21,21 @@
         const ul = document.getElementById('unorder')
         const li = document.createElement('li')
         const inputValue = input.value;
+        li.setAttribute('id',inputValue)
         li.innerText = inputValue
         ul.appendChild(li)
         input.value = ''
        })
-
        
+
+       document.getElementById('delete').addEventListener('click',function(){
+        const ul = document.getElementById('unorder')
+        const input = document.getElementById('input')
+        const inputValue = input.value;
+        const list = document.getElementById(inputValue)
+        ul.removeChild(list)
+       })
+
     </script>
 </body>
 </html>
