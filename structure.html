@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header, .nav,.main,.first-aside,.second-aside,.footer{
+            border: 1px solid green;
+            background-color: bisque;
+            padding: 30px;
+        }
+        ul>li{
+            list-style: none;
+        }
+
+        .container{
+            display: grid;
+            grid-template-areas: 
+             "header header header header"
+             "nav main main first-aside"
+             "nav main main second-aside"
+             "footer footer footer footer"
+            ;
+        }
+
+        .header{
+            grid-area: header;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .main{
+            grid-area: main;
+        }
+        .first-aside{
+            grid-area: first-aside;
+        }
+        .second-aside{
+            grid-area: second-aside;
+        }
+        .footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+ <section class="container">
+    <header class="header">
+        <h1>This is header</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main class="main">
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore corporis culpa, accusantium omnis, error illum labore totam illo tenetur a amet ab odit quaerat, optio dicta nihil quod soluta esse facere eaque repellendus facilis nobis. Iusto, sunt accusamus rem mollitia esse nisi quod ut commodi cumque, voluptatum eveniet fugiat eligendi voluptatem facilis ducimus ad optio incidunt ipsa accusantium sed dicta magnam beatae! Amet aspernatur, magnam dignissimos odio vero ea nisi consequuntur suscipit incidunt pariatur! Cumque, quaerat quo! Est voluptates consequuntur debitis, magni sit molestias repellendus inventore tempore unde id eveniet, nostrum rerum? Qui optio deleniti ipsam tempora, reprehenderit ducimus atque.</article>
+        <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, est id, similique quo molestias amet reprehenderit quisquam natus ducimus blanditiis commodi maiores, non reiciendis! Ipsum similique accusantium atque molestias neque voluptatum. Odio eveniet voluptate rerum odit nostrum quam nihil omnis aut assumenda! Dolor rem enim alias expedita quasi velit omnis, tempora nam deleniti, distinctio quae architecto. Impedit modi, error quisquam obcaecati minima aut incidunt nulla facere accusamus consequatur enim necessitatibus distinctio est laborum ea, accusantium molestias dicta ipsa non ducimus quia ratione amet consequuntur. Veritatis et quas nesciunt quam quidem repellat assumenda recusandae aperiam ducimus neque necessitatibus, doloremque quae consequuntur.</article>
+    </main>
+    <aside>
+        <div class="first-aside">first aside</div>
+        <div class="second-aside">second aside</div>
+    </aside>
+    <footer class="footer">
+        <h1>this is footer</h1>
+    </footer>
+ </section>
+</body>
+</html>

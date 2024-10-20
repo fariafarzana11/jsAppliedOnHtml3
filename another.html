@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <button id="plus"><i class="fa-solid fa-plus"></i></button>
+    <button id="minus"><i class="fa-solid fa-minus"></i></button>
+    
+    <p id="paragraph">0</p>
+     
+    <script>
+        let values = 0;
+        document.getElementById('plus').addEventListener('click',function(){
+            const paragraph = document.getElementById('paragraph')
+            // values = value + 1;
+            // console.log(values);
+            values += 1;
+            paragraph.innerText = values;
+        })
+
+        document.getElementById('minus').addEventListener('click',function(){
+            const paragraph = document.getElementById('paragraph')
+            if(values <= 0){
+                alert("your values is not correct")
+            }
+            values -= 1;
+            paragraph.innerText = values;
+        })
+    </script>
+
+</body>
+</html>  
